@@ -9,13 +9,13 @@ published: true
 
 * We should have a [Github repo](https://github.com/no-fire/line-follower)
 
-Each person should be able to...
+* Each person should be able to...
 
 * Run the code from last project on their laptop
 
-* Access DeepThought and/or Nathan's Beast and run intensive network training code
+* Access DeepThought and/or Nathan's Desktop and run intensive network training code
 
-* Access and contribute to [whatever the training data repository is]
+* Access and contribute to the training data repository 
 
 # Instructions
 
@@ -24,6 +24,10 @@ Each person should be able to...
 * Python 2.7
 
     * Test: in terminal, run `python --version`
+
+* ROS Kinetic
+
+    * Test by running `rosversion -d` in a terminal
 
 * ML Libraries:
 
@@ -41,10 +45,6 @@ Each person should be able to...
 
         * Test: in terminal, run `python -c "import keras"` It should say "Using TensorFlow backend."
 
-* ROS Kinetic
-
-    * Test by running `rosversion -d` in a terminal
-
 * Misc
 
     * [Bcolz](http://bcolz.readthedocs.io/en/latest/install.html)
@@ -61,7 +61,7 @@ Each person should be able to...
 
     * PIL
 
-    * [Matplotlib](https://matplotlib.org/users/installing.html): Plots in python, based off of MatLab's plvotting commands
+    * [Matplotlib](https://matplotlib.org/users/installing.html): Plots in python, based off of MatLab's plotting commands
 
         * `sudo apt-get install python-matplotlib` for Ubuntu Linux
 
@@ -75,57 +75,67 @@ Each person should be able to...
 
         * Test: `python -c "import tqdm; print('Works')"`
 
-## Connecting to Nathan's computer:
+## Working on a remote computer:
 
-Put your SSH public key here:
+### Notes
 
-<table>
-  <tr>
-    <td>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCdEy6qrhnNjqSlbYngjM9m63OvHMiZvxMeNOqLJCJvopDPI0w6ozfKTHwrchqcfY/4pAa9MvSnEOS0hXF6t7oMSFk1psQlgLHxigXbG66SqAeT1pHAkhe91F2HGafNurazbBj5ejQZNqw8ch24aCPGKF/KxcmZbQXNZ7RcNwu5ex8Ke5TqpHUpbqNrq23rrqQz8gnEXvUZTM31eIWAgSIjCbJUpyCqSelBnD7c/NUW/Eo+i18Hgt3fcPk9xMq+U92E5D3ljUfV5PIYJmvwVmslFvqsqWQ2+OvnoI6ey/mSXyEMDwV2cd/oPOxtTAebOT23wK0CYXoKi9K9QSzUmyvKDFaw48+fa6ekJKc8/6rRGCZf26t7FCa+XkoltvBDAF06vhXAF3pIuXjhsQA1vb3aNUe9TBuBbuBrilbXnHwFeyJdExt7i5eaYnqY/TjnMKGiluKRNXoH8BCVjJGUJkarn4gI+ptsRkZRVekDegR/aamFDeKt4hasNtjCROK1CfdMCxpUU09ZT2+KJy2wU5UYsJXfq0J0SrIlqLpNqqihhG6EzVnsw4LaTHBKlRP6YcM1ZdSCG3jQTr2nJj5reU66RUmf/LNoP4mI47Kb2kGSRTPfF/HyirgaPYwolIfMY3ZzI0dthkC9x0jtxDABN0UHiGae4E5jAZ1htSize3PclQ== eric@legoaces.org</td>
-  </tr>
-  <tr>
-    <td>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDkwimd7GWBFmJsBrxijEulSZjb0pJqcbIfU4S7ajH0fnU8491J6EQFOAjKrnvhq7jTu+B/TmbEl0xeY02+BEp+0mANOkDqUtM1gf4re3bFwT9SNYA2wmCjPJvOKSQrngOUn/858jd8cGCxRngC4loEvVfoUHan7mxnQntU22rnlKZnQjRdRr3FWhv0T9rx1OUeenjUX7RBkyIdEMZQIMel+r7PI8Jw/q23fh0pij4qembZJVu2rSF0xxW879R9UTD83Y3FWNklHb/qlssEAotcKGNBTyUGezmasVkXpAFpDQ4mUObR7b9KYr/Eljz7HpUQkPZPrtso1vzU/+hfAoZ9WKHI7eJFM+7pItcn9QxPLn5O9kou/+4CILJlLUoeWl52Sf0Ki05X6aJcj/KTXOS0jPUeD9fB2+SEP+qVgH61zF/kyluNwNot6Y2XVPJIIlJxBie1GxUA4ka5R6g34K/hhBBm8REk6B6BU0ZfCxV1eIOrH3UCLF5/kugncSHRF3bHp5MM1CQ80LFXZhxG5MrwQ4X/tPgmYJSIF8qVYsrfnS+gvH7KI7JSI8MscwPgN6McP3GnaXnyLuI23CvSWHzGqmqtM9BDGNVwDWLThMz/6fCLgi9FOClr9xAJ5NWpoS79JLWcESUHvOfoGbN0PPlbr7k8I9mlc9fErQdxEFy0FQ== lauren.gulland@students.olin.edu</td>
-  </tr>
-  <tr>
-    <td>Nathan Laptop
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDMtM97hHsEscozL6smXReZF3r6Vsq5CAyDm2OmsMNls3I8goIwU1JWKxpZhhcKyTNbdlqhgqMHcAAKtM8X4qfawJbNKqh9027LgZeFF47tpre2kXzdQWUZOfifx65ADfYA5CEXpR+oIvYFf0zkQL8XdegOAZyg1KvmlEXSVf1QYC3TDV0b3nNI8qZccvcj7nNWrvhrZI5K+2boPQtoVLSPrVmdxSVcTnAYKa74JK8OSG0QT9BRThFv699Wzj/Hm9iwAQtv9nR8qXTjBE/wkkCw8MaVZzNuvRY8e51fDg6Y7V1MgPdiif5CN/abD48QIPr6syWyTeiCjVi9XeArfFYC+/hB88B96/Kzac/M0VxPiggqtd20YsB5N4F+A5amNNaXnlL/fmawvZy0ifyZZCIOnYAm04W6bPK57It5v9BkQPR+gKy8TEYNZ9eVaZwsQn2V1JH3x4InUNsRBP6WstklaCzj5piAJrM+IZbykfvUgKJBQOPtc9nlRQafasfO1fxqrQ/1TTQC63r+zhi+RPZ5vZvgB5eCPVPW52jMuFTARoAftTPBM1uApmlbmkgfd7cmS4EPcTlk7oYAVyVkMWMavBaIBwBbPwpk75YQLpBIABTtJMZyhnq5DLZ7QzRZaVsbfhfLFEnLznyXBeS7Wz9uKcXjYG7r2zq++9T2wzYWWQ== nathaniel.yee@students.olin.edu</td>
-  </tr>
-</table>
+* The examples here assume the remote computer is called 'nathanDesktop', the username is ‘nathan’, and DNS resolving works properly on your network.
 
+* There is probably a better way to do this than using a shared user account. This is the solution
 
-Once Nathan authorizes access...
+### Steps:
 
-* Want a terminal
+1. Get access to the remote computer using SSH public keys (once)
 
-    * `ssh nathan@nathanDesktop`
+    1. Generate them ([Ubuntu Guide](https://help.ubuntu.com/community/SSH/OpenSSH/Keys))
 
-    * `tmux ls`
+    2. Transmit them to the owner 
 
-        * Should print out that jupyter_server is running.
+        1. Your public key is found at `~/.ssh/id_rsa.pub`
 
-    * `tmux a -t jupyter_server`
+        2. Send the contents of that file over email, Google Docs, etc.
 
-        * Navigate tmux using ctrl+b, arrow key
+        3. While you're at it, you should [add your SSH key to Github](https://github.com/settings/keys), if you haven’t already. It’ll allow you to access your repos without entering your u/n and password every time.
 
-        * [https://learnxinyminutes.com/docs/tmux/](https://learnxinyminutes.com/docs/tmux/)
+    3. Owner adds the keys to server
 
-        * [https://danielmiessler.com/study/tmux/#gs.=j=4xnE](https://danielmiessler.com/study/tmux/#gs.=j=4xnE)
+        4. All public keys should be stored in .ssh/authorized_keys 
 
-* Want to use remote jupyter browser in your browser
+        5. http://stackoverflow.com/questions/12392598/how-to-add-rsa-key-to-authorized-keys-file
 
-    * `ssh -N -f -L localhost:8890:localhost:8890 nathan@nathanDesktop`
+2. Once remote owner authorizes access...
 
-    * Go to localhost:8890/tree in browser
+    4. Connect to the computer via ssh
 
-    * Change kernel to 'Python [condaenv:deepLearning]'
+        1. `ssh nathan@nathanDesktop`
 
-* Want a file explorer - nautilus
+    1. Open a terminal. If you are ssh-ing in, you'll already be in a terminal, but if you want to use tmux or another terminal, then:
 
-    * sftp://nathan@nathandesktop/home/nathan/olin/spring2017/line-follower
+        2. `tmux ls`
 
-* Broadcast a message
+            1. Should print out that jupyter_server is running.
 
-    * `wall _____`
+        3. `tmux a -t jupyter_server`
+
+            2. Navigate tmux using ctrl+b, arrow key
+
+            3. [https://learnxinyminutes.com/docs/tmux/](https://learnxinyminutes.com/docs/tmux/)
+
+            4. [https://danielmiessler.com/study/tmux/#gs.=j=4xnE](https://danielmiessler.com/study/tmux/#gs.=j=4xnE)
+
+    2. Open the remote jupyter server in your browser to start editing files
+
+        4. `$ ssh -N -f -L localhost:8890:localhost:8890 nathan@nathanDesktop`
+
+        5. Go to `localhost:8890/tree` in browser
+
+        6. On Jupyter's Change kernel to 'Python [condaenv:deepLearning]’
+
+    3. Want a file explorer - nautilus
+
+        7. sftp://nathan@nathandesktop/home/nathan/olin/spring2017/line-follower
+
+    4. Try broadcasting a message: `wall _____` 
 
 ## Code to download
 
