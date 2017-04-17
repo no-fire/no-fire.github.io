@@ -109,7 +109,7 @@ published: true
 
         1. `ssh nathan@nathanDesktop`
 
-    1. Open a terminal. If you are ssh-ing in, you'll already be in a terminal, but if you want to use tmux or another terminal, then:
+    1. [Optional] If you want to useOpen a terminal. If you are ssh-ing in, you'll already be in a terminal, but if you want to use tmux or another terminal, then:
 
         2. `tmux ls`
 
@@ -129,7 +129,7 @@ published: true
 
         5. Go to `localhost:8890/tree` in browser
 
-        6. On Jupyter's Change kernel to 'Python [condaenv:deepLearning]’
+        6. Change kernel to your deep learning one. On Jupyter's top bar, Kernel>'Python [condaenv:deepLearning]’
 
     3. Want a file explorer - nautilus
 
