@@ -81,9 +81,9 @@ published: true
 
 * The examples here assume the remote computer is called 'nathanDesktop', the username is ‘nathan’, and DNS resolving works properly on your network.
 
-* There is probably a better way to do this than using a shared user account. This is the solution
+* We are connecting to the remote computer because it's a better way than using a shared user account. If you have a different method that works better for you, follow that.
 
-### Steps:
+Steps:
 
 1. Get access to the remote computer using SSH public keys (once)
 
@@ -103,17 +103,17 @@ published: true
 
         5. http://stackoverflow.com/questions/12392598/how-to-add-rsa-key-to-authorized-keys-file
 
-2. Once remote owner authorizes access...
+2. Access and edit your files!
 
     4. Connect to the computer via ssh
 
         1. `ssh nathan@nathanDesktop`
 
-    1. [Optional] If you want to useOpen a terminal. If you are ssh-ing in, you'll already be in a terminal, but if you want to use tmux or another terminal, then:
+    1. [Optional] If you want to use tmux rather than your normal terminal:
 
-        2. `tmux ls`
+        2. Try `$ tmux ls`
 
-            1. Should print out that jupyter_server is running.
+            1. Should print out that jupyter_server is running. 
 
         3. `tmux a -t jupyter_server`
 
