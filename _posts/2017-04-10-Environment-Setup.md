@@ -13,7 +13,7 @@ published: true
 
 * Run the code from last project on their laptop
 
-* Access DeepThought and/or Nathan's Desktop and run intensive network training code
+* Access DeepThought and/or Nathan's Desktop and run intensive training code
 
 * Access and contribute to the training data repository 
 
