@@ -1,5 +1,5 @@
 ---
-title: Story 1 - Reflections on the Data Collection Pipeline
+title: Story 1: The data pipeline
 layout: post
 permalink: /data-collection
 source-id: 1OwwObSiyLWbOfpometyXA_5ytZnusHYy2c5SZXdFhbM
@@ -15,7 +15,7 @@ For a supervised machine learning project, we need to collect and organize a lar
 
 ## What data do we need?
 
-## ![image alt text]({{ site.url }}/public/cvJhp4jSLYgkJiWIFJsfA_img_0.png)
+## ![image alt text]({{ site.url }}/images/gdocs/cvJhp4jSLYgkJiWIFJsfA_img_0.png)
 
 Figure 2: Neural network inputs and outputs. *Input Image 1* is fed into the neural network to calculate *Output Vector 1* (containing the desired forward and angular velocities). *Input Image 2* is then combined with the *Recurrent State 1* to calculate *Output Vector 2*.
 
@@ -23,7 +23,7 @@ Because we want a recurrent neural network regressor for our robot controller, w
 
 # The Data Pipeline
 
-# ![image alt text]({{ site.url }}/public/cvJhp4jSLYgkJiWIFJsfA_img_1.png)
+# ![image alt text]({{ site.url }}/images/gdocs/cvJhp4jSLYgkJiWIFJsfA_img_1.png)
 
 Figure 1: The data pipeline
 
@@ -67,7 +67,7 @@ After deciding what data we were going to collect, we dove into how to collect i
 
 We all sat down to decide exactly what the data pipeline was going to look like, and typed up an accessible google doc (you can see it [here](https://docs.google.com/document/d/1m_9tAMSPhVd9YHXxiS7gS74h9O3FT_X9WAszFTgKTE0/edit?usp=sharing), or concisely in the image below) for all of us to reference when creating our individual parts. By making a google doc, we were all working towards the same end goal, and could develop on the same file system -- which didn't exist yet in real life -- on each of our respective computers. 
 
-![image alt text]({{ site.url }}/public/cvJhp4jSLYgkJiWIFJsfA_img_2.png)
+![image alt text]({{ site.url }}/images/gdocs/cvJhp4jSLYgkJiWIFJsfA_img_2.png)
 
 Specifically, the google doc contained the exact directories, naming conventions, and content that we would each be working with. While Joystick Control was outputting a source.bag to within a directory named based on the date and content of the bag, the Bag Processing script was able to take in a bag and output two hundred processed images to a folder named "raw" within that directory.
 
@@ -95,7 +95,7 @@ This method has the added benefit of implicitly synchronizing the joystick contr
 
 * Δ: Stub and chain!
 
-![image alt text]({{ site.url }}/public/cvJhp4jSLYgkJiWIFJsfA_img_3.jpg)
+![image alt text]({{ site.url }}/images/gdocs/cvJhp4jSLYgkJiWIFJsfA_img_3.jpg)
 
-![image alt text]({{ site.url }}/public/cvJhp4jSLYgkJiWIFJsfA_img_4.jpg)
+![image alt text]({{ site.url }}/images/gdocs/cvJhp4jSLYgkJiWIFJsfA_img_4.jpg)
 
