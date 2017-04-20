@@ -1,5 +1,5 @@
 ---
-title: Story 1: The data pipeline
+title: "Story 1: The data pipeline"
 layout: post
 permalink: /data-collection
 source-id: 1OwwObSiyLWbOfpometyXA_5ytZnusHYy2c5SZXdFhbM
